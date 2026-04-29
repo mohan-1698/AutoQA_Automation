@@ -497,6 +497,8 @@ Reads test data from Excel file:
 Object[][] loginData = ExcelUtil.getLoginData();
 ```
 
+Note: `Object[][]` is a 2D array where each row contains test parameters
+
 ### ScreenshotUtil
 Captures screenshots on failure:
 ```java
@@ -624,8 +626,9 @@ WebDriver driver = DriverFactory.initDriver();
 ### Add Data Provider:
 1. Create method in TestData class
 2. Annotate with @DataProvider
-3. Return Object[][]
+3. Return `Object[][]` (2D array of test data)
 4. Use in test method parameter
+
 
 ---
 
