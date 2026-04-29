@@ -1,0 +1,13 @@
+<suite name="AutomationSuite">
+
+    <listeners>
+        <listener class-name="utils.TestListener"/>
+    </listeners>
+
+    <test name="Tests">
+        <classes>
+            <class name="tests.EndToEndTest"/>
+        </classes>
+    </test>
+
+</suite>
